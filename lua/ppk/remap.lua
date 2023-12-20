@@ -29,7 +29,7 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
-vim.keymap.set("n", "<leader>f", function() 
+vim.keymap.set("n", "<leader>f", function()
     vim.lsp.buf.format()
 end)
 
@@ -40,3 +40,12 @@ vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+-- nerd tree
+vim.keymap.set("n", "<leader>n", ':NERDTreeToggle<CR>')
+
+-- navigate between splits
+vim.keymap.set("n", "<C-j>", '<C-w>j<C-w>_')
+vim.keymap.set("n", "<C-k>", '<C-w>k<C-w>_')
+vim.keymap.set("n", "<C-l>", '<C-w>l<C-w>_')
+vim.keymap.set("n", "<C-h>", '<C-w>h<C-w>_')

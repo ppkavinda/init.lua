@@ -39,5 +39,10 @@ return require('packer').startup(function(use)
 		  "neovim/nvim-lspconfig",
 	  }
       use ('jiangmiao/auto-pairs')
+      use('dense-analysis/ale')
+      use { 'numToStr/Comment.nvim',
+          config = function()
+          end
+      }
 end)
 
